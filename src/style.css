@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(51, 51, 51);
+  font-family: "myFont";
+}
+@font-face {
+  font-family: myFont;
+  src: url(./LobsterTwo-Regular.ttf);
+}
+.header {
+  color: white;
+}
