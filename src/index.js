@@ -7,4 +7,4 @@ import { contentOne } from "./contentOne"
 component();
 
 //button onclick to display content one?
-contentOne();
+// contentOne();
