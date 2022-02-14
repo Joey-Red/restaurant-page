@@ -1,32 +1,24 @@
-import { contentOne } from './contentOne';
 import Icon from './sushipic2.jpg'
 
 export function component(){
+  const mainBody = document.querySelector("#content");
+  mainBody.replaceChildren("")
+  const header = document.createElement('div');
   const element = document.createElement('div');
   element.classList.add('header')
   const myIcon = new Image();
   myIcon.src = Icon;
   myIcon.style.width = "100%"
   myIcon.style.height = "30vh"
-  const header = document.createElement('div')
+  
   header.classList.add("header");
   header.textContent = "Welcome to Fish's Sushi, we don't dissapoint.";
   header.style.fontSize = "2rem"
   header.style.textAlign = "center"
   document.body.append(header)
 
-  const tabs = document.createElement("div");
-  tabs.classList.add("tabs");
-  document.body.append(tabs)
-  const tabOne = document.createElement("button");
-  const tabTwo = document.createElement("button");
-  const tabThree = document.createElement("button");
-  tabOne.textContent = "HOME";
-  tabTwo.textContent = "MENU";
-  tabThree.textContent = "CONTACT";
-  tabs.append(tabOne, tabTwo, tabThree)
-
-  const mainBody = document.createElement("div");
+  
+  
   mainBody.classList.add("main");
   mainBody.append(myIcon);
   const mainText = document.createElement("div");
@@ -45,20 +37,5 @@ export function component(){
   mainBody.append(mainText);
   mainBody.append(secondaryText);
   mainBody.append(thirdText);
-  
-
-  tabOne.addEventListener("click", function(){
-      document.body.replaceChildren("")
-      component();
-  });
-
-  tabTwo.addEventListener("click", function(){
-    contentOne();
-  });
-
-  tabThree.addEventListener("click", function(){
-    console.log("TEST3")
-  });
-
 }
 
