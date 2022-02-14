@@ -50,11 +50,9 @@ export function component(){
   tabOne.addEventListener("click", function(){
       document.body.replaceChildren("")
       component();
-      console.log("TEST1")
   });
 
   tabTwo.addEventListener("click", function(){
-    console.log("TEST2")
     contentOne();
   });
 

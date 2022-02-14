@@ -6,7 +6,6 @@ body {
   font-family: "myFont";
   background: url(./inside.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
@@ -54,7 +53,8 @@ button:hover {
 .header,
 .mainText,
 .secondaryText,
-.thirdText {
+.thirdText,
+.menuList {
   text-shadow: 2px 2px black;
   color: white;
 }
@@ -72,4 +72,9 @@ button:hover {
   font-style: italic;
   font-size: 1.5rem;
   margin-left: 10%;
+}
+.menuList {
+  list-style: none;
+  font-size: 2rem;
+  /* overflow: scroll; */
 }
